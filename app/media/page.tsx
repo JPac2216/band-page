@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 
-export default function Releases() {
+
+export default function Media() {
     return (
         <div
             className="min-h-screen bg-cover bg-center"
@@ -14,9 +15,10 @@ export default function Releases() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
                 >
-                    <h1 className="text-5xl font-semibold tracking-tight text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">Releases</h1>
+                    <h1 className="text-5xl font-semibold tracking-tight text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">Media</h1>
                 </motion.div>
             </div>
+
         </div>
     );
 }
