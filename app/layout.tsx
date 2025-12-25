@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import Aurora from '@/components/backgrounds/aurora';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Midnight Drive | NJ Band",
+  title: "Midnight Drive",
   description: "Hottest Band in New Jersey",
 };
 
@@ -31,6 +32,14 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+          <div className="absolute inset-0 opacity-20">
+            <Aurora
+              colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+              blend={0.5}
+              amplitude={1.0}
+              speed={0.6}
+            />
+          </div>
         <Footer />
       </body>
     </html>

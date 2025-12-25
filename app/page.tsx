@@ -43,15 +43,6 @@ export default function Home() {
           Listen to our NEWEST Single - <span className="text-yellow-400 italic">City Lights</span></h1>
         <YouTubeEmbed videoid="oXaERVO4I6Q" height={400} width={720} />
       </div>
-
-      <div className="absolute inset-0 opacity-20">
-        <Aurora
-          colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={0.6}
-        />
-      </div>
       
     </div>
   );

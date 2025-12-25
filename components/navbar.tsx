@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image";
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
+import { usePathname } from "next/navigation";
 
 import {
   NavigationMenu,
@@ -15,48 +15,11 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-]
-
 export function Navbar() {
+  const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/0 backdrop-blur border-b">
+    <nav className="sticky top-0 z-50 bg-background/20 backdrop-blur border-b">
         <div className="flex items-center justify-between px-6 h-14">
             <NavigationMenu>
                 <NavigationMenuList className="flex-wrap gap-1">
@@ -67,12 +30,12 @@ export function Navbar() {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} px-2 py-1.5 bg-transparent hover:bg-white/10 focus:bg-white/10`}>
-                            <Link href="/Shows">Shows</Link>
+                            <Link href="/shows">Shows</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} px-2.5 py-1.5 bg-transparent hover:bg-white/10 focus:bg-white/10`}>
-                            <Link href="/Media">Media</Link>
+                            <Link href="/media">Media</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
@@ -87,6 +50,21 @@ export function Navbar() {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
+
+            <div className="absolute left-1/2 -translate-x-1/2">
+              {pathname !== "/" && (
+                <Link href="/">
+                    <Image
+                        src="/logo_horizontal.svg"
+                        alt="Spotify"
+                        width={180}
+                        height={100}
+                        className="brightness-0 invert opacity-80 hover:opacity-100 transition"
+                    />
+                </Link>
+              )}
+
+            </div>
             <div className="flex items-center gap-4">
                 <Link href="https://open.spotify.com/artist/2gNS3sdwojkIY1BKmXUM7B" target="_blank">
                     <Image
