@@ -35,7 +35,7 @@ export function Navbar() {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} px-2.5 py-1.5 bg-transparent hover:bg-white/10 focus:bg-white/10`}>
-                            <Link href="/media">Media</Link>
+                            <Link href="/gallery">Gallery</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>

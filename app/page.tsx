@@ -3,7 +3,6 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-//import CircularGallery from '@/components/galleries/gallery'
 import { YouTubeEmbed } from '@next/third-parties/google';
 
 
