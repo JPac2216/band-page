@@ -28,18 +28,18 @@ export default function RootLayout({
   return (
     <html lang="en" className = "dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen flex flex-col`}
       >
+        <div className="absolute inset-0 opacity-20 pointer-events-none -z">
+          <Aurora
+            colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+            blend={0.5}
+            amplitude={1.0}
+            speed={0.6}
+          />
+        </div>
         <Navbar />
         {children}
-          <div className="absolute inset-0 opacity-20">
-            <Aurora
-              colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-              blend={0.5}
-              amplitude={1.0}
-              speed={0.6}
-            />
-          </div>
         <Footer />
       </body>
     </html>
