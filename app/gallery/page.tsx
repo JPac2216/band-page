@@ -23,8 +23,11 @@ export default function Gallery() {
                 <Example />
                 <div className="relative flex flex-col items-center justify-start pt-0 gap-4 z-10">
                         <h1 className="text-3xl font-semibold tracking-tight text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">
-                          LIVE @ Bravo's Cafe, East Orange, NJ</h1>
-                        <YouTubeEmbed videoid="AKpjSQEntGE" height={800} width={720} />
+                          LIVE @ Bravo's Cafe, East Orange, NJ | 11/29/25</h1>
+                        <YouTubeEmbed videoid="AKpjSQEntGE" height={500} width={720} />
+                        <h1 className="text-3xl font-semibold tracking-tight text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">
+                          LIVE @ The Meatlocker, Montclair, NJ | 1/19/25</h1>
+                        <YouTubeEmbed videoid="c7WTpLkyRrc" height={500} width={720} />
                 </div>
             </div>
         </div>
