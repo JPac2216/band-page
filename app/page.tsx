@@ -13,7 +13,7 @@ export default function Home() {
       className="min-h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/bg1.jpeg')" }}
     >
-      <div className="relative h-[70vh] flex flex-col items-center justify-start pt-16 gap-4 z-10">
+      <div className="relative h-[80vh] flex flex-col items-center justify-start pt-16 gap-4 z-10">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
