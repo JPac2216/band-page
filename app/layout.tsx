@@ -30,6 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen flex flex-col`}
       >
+        <Navbar />
+        {children}
+        <Footer />
         <div className="absolute inset-0 opacity-20 pointer-events-none -z">
           <Aurora
             colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
@@ -38,9 +41,6 @@ export default function RootLayout({
             speed={0.6}
           />
         </div>
-        <Navbar />
-        {children}
-        <Footer />
       </body>
     </html>
   );

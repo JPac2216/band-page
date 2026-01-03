@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export const title = "Standard Carousel";
 
-const slides = Array.from({ length: 20 }, (_, index) => ({
+const slides = Array.from({ length: 10 }, (_, index) => ({
   id: index + 1,
   image: `/gallery/gallery${index+1}.jpg`,
 }));
