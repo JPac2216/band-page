@@ -18,7 +18,7 @@ export default function About() {
                     <h1 className="text-5xl font-semibold tracking-tight text-center text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">About Us</h1>
                 </motion.div>
             </div>
-            <div className="max-w-6xl mx-auto px-6 flex gap-12 items-center">
+            <div className="max-w-6xl mx-auto px-6 flex md:flex-row flex-col gap-12 items-center mb-4">
                 <div className="flex-1 text-white">
                     <h2 className="text-4xl font-semibold mb-4">
                     Who We Are
@@ -41,7 +41,7 @@ export default function About() {
                     />
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto px-6 flex gap-12 items-center">
+            <div className="max-w-6xl mx-auto px-6 flex md:flex-row flex-col gap-12 items-center mb-4">
                 <div className="flex-1 flex justify-start">
                     <Image
                     src="/about/jakesam.JPG"
@@ -65,7 +65,7 @@ export default function About() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto px-6 flex gap-12 items-center">
+            <div className="max-w-6xl mx-auto px-6 flex md:flex-row flex-col gap-12 items-center mb-4">
                 <div className="flex-1 text-white">
                     <p className="text-lg leading-relaxed opacity-90">
                     Sam and Jake went on to meet Patrick Cortelli in the 
@@ -87,7 +87,7 @@ export default function About() {
                     />
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto px-6 flex gap-12 items-center">
+            <div className="max-w-6xl mx-auto px-6 flex md:flex-row flex-col gap-12 items-center mb-4">
                 <div className="flex-1 flex justify-start">
                     <Image
                     src="/about/dray.JPEG"
@@ -109,7 +109,7 @@ export default function About() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto px-6 flex gap-12 items-center mb-12">
+            <div className="max-w-6xl mx-auto px-6 flex md:flex-row flex-col gap-12 items-center mb-12">
                 <div className="flex-1 text-white">
                     <h2 className="text-4xl font-semibold mb-4">
                     The Rest is History

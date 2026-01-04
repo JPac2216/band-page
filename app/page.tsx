@@ -37,7 +37,7 @@ export default function Home() {
       </div>
 
       <div className="relative flex flex-col items-center gap-6 z-10 mb-24">
-        <h1 className="text-5xl font-semibold tracking-tight text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">
+        <h1 className="text-5xl font-semibold text-center tracking-tight text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">
           Listen to our NEWEST Single - <span className="text-yellow-400 italic">City Lights</span></h1>
         <YouTubeEmbed videoid="oXaERVO4I6Q" height={400} width={720} />
       </div>

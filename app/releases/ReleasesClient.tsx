@@ -9,7 +9,7 @@ export default function Releases() {
             className="min-h-screen bg-cover bg-center"
             style={{ backgroundImage: "url('/bg1.jpeg')" }}
         >
-            <div className="relative min-h-screen flex flex-col items-center justify-start pt-16 z-10">
+            <div className="relative min-h-screen flex flex-col items-center justify-start pt-16 z-10 px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -28,18 +28,18 @@ export default function Releases() {
                             id: "post-2",
                             title: "City Lights",
                             summary:
-                            "Dive into creating scalable design systems using Tailwind CSS and shadcn/ui. Learn how to maintain consistency while building flexible and maintainable component libraries.",
+                            "A song about the overwhelming feeling of being in a new place after leaving your past behind.",
                             label: "City Lights",
                             author: "Midnight Drive",
                             published: "September 26, 2025",
-                            url: "",
+                            url: "/releases/city_lights",
                             image: "/albums/citylights.jpg",
                         },
                         {
                             id: "post-1",
                             title: "Made You Stay",
                             summary:
-                            "Dive into creating scalable design systems using Tailwind CSS and shadcn/ui. Learn how to maintain consistency while building flexible and maintainable component libraries.",
+                            "A classic breakup song where one's past experiences are reflected in the world around them.",
                             label: "Made You Stay",
                             author: "Midnight Drive",
                             published: "May 2, 2025",

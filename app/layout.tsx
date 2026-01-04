@@ -33,7 +33,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <div className="absolute inset-0 opacity-20 pointer-events-none -z">
+        <div className="absolute inset-0 opacity-20 pointer-events-none z-0">
           <Aurora
             colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
             blend={0.5}

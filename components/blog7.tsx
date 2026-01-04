@@ -118,7 +118,7 @@ const Blog7 = ({
               <CardFooter>
                 <a
                   href={post.url}
-                  target="_blank"
+                  //target="_blank"
                   className="flex items-center text-foreground hover:underline"
                 >
                   Read more

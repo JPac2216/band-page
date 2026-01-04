@@ -16,10 +16,10 @@ export default function Shows() {
                 >
                     <h1 className="text-5xl font-semibold tracking-tight text-white leading-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.35)]">Shows</h1>
                 </motion.div>
-                <h1 className="text-4xl font-semibold tracking-tight text-white leading-tight ">
+                <h1 className="text-4xl font-semibold text-center tracking-tight text-white leading-tight ">
                     We currently have no shows listed.
                 </h1>
-                <h1 className="text-4xl font-semibold tracking-tight text-white leading-tight ">
+                <h1 className="text-4xl font-semibold text-center tracking-tight text-white leading-tight ">
                     Follow us on Instagram for updates: <a className="text-yellow-400 italic underline" href="https://www.instagram.com/direct/t/17846797725172316/">@midnightdrive_nj</a>
                 </h1>
             </div>
