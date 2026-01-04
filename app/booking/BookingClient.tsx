@@ -8,7 +8,7 @@ export default function Booking() {
             className="min-h-screen bg-cover bg-center"
             style={{ backgroundImage: "url('/bg1.jpeg')" }}
         >
-            <div className="relative min-h-screen flex flex-col items-center justify-start pt-16 z-10 gap-24">
+            <div className="relative flex flex-col items-center justify-start pt-16 z-10 gap-24">
                 <motion.div
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}

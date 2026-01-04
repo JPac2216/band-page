@@ -9,7 +9,7 @@ export default function Releases() {
             className="min-h-screen bg-cover bg-center"
             style={{ backgroundImage: "url('/bg1.jpeg')" }}
         >
-            <div className="relative min-h-screen flex flex-col items-center justify-start pt-16 z-10 px-4">
+            <div className="relative flex flex-col items-center justify-start pt-16 z-10 px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}

@@ -126,7 +126,7 @@ export default function About() {
 
                 <div className="flex-1 flex justify-end">
                     <Image
-                    src="/about/techfest.JPG"
+                    src="/about/techfest.jpg"
                     width={600}
                     height={560}
                     alt="Band photo"
