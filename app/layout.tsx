@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import Aurora from '@/components/backgrounds/aurora';
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
         <div className="absolute inset-0 opacity-20 pointer-events-none z-0">
           <Aurora
