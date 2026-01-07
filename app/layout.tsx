@@ -19,6 +19,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Midnight Drive",
   description: "Hottest Band in New Jersey",
+  keywords: [
+    "Midnight Drive band",
+    "New Jersey band",
+    "indie rock band NJ",
+    "alternative band",
+    "indie rock band New Jersey"
+  ],
+  metadataBase: new URL("https://midnightdrivenj.com"),
 };
 
 export default function RootLayout({
