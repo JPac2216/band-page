@@ -26,7 +26,13 @@ export const metadata: Metadata = {
     "alternative band",
     "indie rock band New Jersey"
   ],
+  icons: {
+    icon: "/favicon.ico",
+  },
   metadataBase: new URL("https://midnightdrivenj.com"),
+  robots: {
+    "max-image-preview": "none",
+  },
 };
 
 export default function RootLayout({
